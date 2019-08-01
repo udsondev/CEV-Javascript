@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verificação de Nacionalidade</title>
+    <style>
+        h1 {
+                 
+            font-family: Arial;
+            color: rgb(40, 42, 199)
+
+        }
+        body {
+            background: $black;
+            color: $white;
+            font-family: $mainFont;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 1px rgba($black, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    Informe seu País de Origem: <input type="text" id="txtnac">
+    <input type="button" value="Verificar" onclick="check()">
+
+    <div id="res">
+    </div>
+
+    <script>
+        function check() {
+           
+            var nac = document.querySelector('input#txtnac')
+            var res = document.querySelector('div#res')
+            var nacio = String(txtnac.value).toUpperCase()
+            
+            res.innerHTML = `<p>Com base no seu páis você é considerado: `
+            
+                
+                if (nacio === "BRASIL") {
+                    res.innerHTML += '<strong>Brasileiro</strong>'
+                } else {
+                    res.innerHTML += "Estrangeiro"
+                }
+                
+        }   
+    
+    </script>
+
+
+</body>
+</html>
