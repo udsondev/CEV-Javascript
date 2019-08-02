@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Casa de Cambio</title>
+</head>
+<body>
+    <h1>Casa de Cambio</h1>
+    <p>
+        ------------------------------------------------------------------------</br>
+        Informe Seu nome no Sistema:    <input type="text" name="nome" id="nome"> </br>
+        Informe seu CPF no Sistema: <input type="number" name="cpf" id="cpf"> </br>
+        Informe Seu Telefone no sistema:    <input type="number" name="tel" id="tel"> </br>
+        <input type="button" value="Verificar" onclick="verificar()"> </br>
+        ------------------------------------------------------------------------   
+    </p>
+    <div id="cadastro">
+
+    </div>
+    <div id="calculo">
+
+
+    </div>
+
+    <script>
+        var unome  = document.querySelector('input#nome')
+        var ucpf = document.querySelector('input#cpf')
+        var utel = document.querySelector('input#tel')
+        var cadadstro = document.querySelector('div#cadastro')
+        var calculo = document.querySelector('div#calculo')
+            function verificar() {
+            cadastro.innerHTML = `Prezado Sr(a):<strong> ${unome}</strong>, CPF:<strong>${ucpf}</strong> Telefone: ${utel} </br>`
+            cadastro.innerHTML += `Informe a o valor a ser trocado: `
+            
+            }
+    
+    
+    </script>
+</body>
+</html>
